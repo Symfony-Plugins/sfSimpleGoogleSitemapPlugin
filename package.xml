@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0"
+	xmlns="http://pear.php.net/dtd/package-2.0"
+	xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+	<name>sfSimpleGoogleSitemapPlugin</name>
+	<channel>pear.symfony-project.com</channel>
+	<summary>Symfony simple Google sitemap plugin</summary>
+	<description>Adds ability to generate Google sitemap</description>
+	<lead>
+		<name>Sid BACHTIAR</name>
+		<user>sidbac</user>
+		<email>sid.bachtiar@gmail.com</email>
+		<active>yes</active>
+	</lead>
+	<date>2009-03-14</date>
+	<time>00:00:00</time>
+	<version>
+		<release>0.0.9</release>
+		<api>0.0.9</api>
+	</version>
+	<stability>
+		<release>alpha</release>
+		<api>alpha</api>
+	</stability>
+	<license uri="http://www.symfony-project.org/license">
+		MIT license
+	</license>
+	<notes>
+		Visit http://onlinesid.com/blog/sfsimplegooglesitemapplugin to
+		leave comment, suggestion, etc about this plugin
+	</notes>
+	<contents>
+		<dir name="/">
+			<file role="data" name="README" />
+			<file role="data" name="LICENSE" />
+			<dir name="config">
+				<!-- model -->
+				<file role="data" name="app.yml.sample" />
+			</dir>
+			<dir name="modules">
+				<file role="data"
+					name="sfSimpleGoogleSitemap/actions/actions.class.php" />
+				<file role="data"
+					name="sfSimpleGoogleSitemap/config/module.yml" />
+				<file role="data"
+					name="sfSimpleGoogleSitemap/config/view.yml" />
+				<file role="data"
+					name="sfSimpleGoogleSitemap/lib/GsgXml.class.php" />
+				<file role="data"
+					name="sfSimpleGoogleSitemap/lib/sfSimpleGoogleSitemap.class.php" />
+				<file role="data"
+					name="sfSimpleGoogleSitemap/templates/indexSuccess.php" />
+			</dir>
+		</dir>
+	</contents>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.1.0</min>
+			</php>
+			<pearinstaller>
+				<min>1.4.1</min>
+			</pearinstaller>
+			<package>
+				<name>symfony</name>
+				<channel>pear.symfony-project.com</channel>
+				<min>1.0.0</min>
+				<max>2.0.0</max>
+				<exclude>2.0.0</exclude>
+			</package>
+		</required>
+	</dependencies>
+	<phprelease />
+	<changelog>
+    <release>
+      <version>
+        <release>0.0.9</release>
+        <api>0.0.9</api>
+      </version>
+      <stability>
+        <release>alpha</release>
+        <api>alpha</api>
+      </stability>
+      <date>2009-03-14</date>
+      <license uri="http://www.gnu.org/copyleft/lesser.html">
+        LGPL
+      </license>
+      <notes>
+ * Make README a bit clearer :)
+      </notes>
+    </release>
+	</changelog>
+</package>
