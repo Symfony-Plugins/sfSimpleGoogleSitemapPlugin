@@ -7,29 +7,29 @@
 	<name>sfSimpleGoogleSitemapPlugin</name>
 	<channel>pear.symfony-project.com</channel>
 	<summary>Symfony simple Google sitemap plugin</summary>
-	<description>Adds ability to generate Google sitemap</description>
+	<description>Adds ability to generate Google sitemap.</description>
 	<lead>
 		<name>Sid BACHTIAR</name>
 		<user>sidbac</user>
-		<email>sid.bachtiar@gmail.com</email>
+		<email>sid@bluehorn.co.nz</email>
 		<active>yes</active>
 	</lead>
-	<date>2009-03-14</date>
+	<date>2010-06-07</date>
 	<time>00:00:00</time>
 	<version>
-		<release>0.0.9</release>
-		<api>0.0.9</api>
+		<release>1.0.1</release>
+		<api>1.0.1</api>
 	</version>
 	<stability>
-		<release>alpha</release>
-		<api>alpha</api>
+		<release>stable</release>
+		<api>stable</api>
 	</stability>
 	<license uri="http://www.symfony-project.org/license">
 		MIT license
 	</license>
 	<notes>
-		Visit http://onlinesid.com/blog/sfsimplegooglesitemapplugin to
-		leave comment, suggestion, etc about this plugin
+		Visit http://bluehorn.co.nz/2010/06/07/sfsimplegooglesitemapplugin/ to
+		leave comments or discuss this plugin
 	</notes>
 	<contents>
 		<dir name="/">
@@ -76,19 +76,20 @@
 	<changelog>
     <release>
       <version>
-        <release>0.0.9</release>
-        <api>0.0.9</api>
+        <release>1.0.1</release>
+        <api>1.0.1</api>
       </version>
       <stability>
-        <release>alpha</release>
-        <api>alpha</api>
+        <release>stable</release>
+        <api>stable</api>
       </stability>
-      <date>2009-03-14</date>
+      <date>2010-06-07</date>
       <license uri="http://www.gnu.org/copyleft/lesser.html">
         LGPL
       </license>
       <notes>
- * Make README a bit clearer :)
+ * Changed 'off' to 'false' in view.yml to make it work on 1.4
+ * Get raw in template so it doesn't get escaped if the project's escape is set
       </notes>
     </release>
 	</changelog>

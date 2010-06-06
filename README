@@ -7,7 +7,7 @@ Originally was built to go together with sfSimpleBlogPlugin, but it is configura
 
 This plugin supports Propel and DbFinder. By default it tries to detect if DbFinderPlugin exists and use it, but you can force it to use Propel or DbFinder from app.yml.
 
-Visit [sfSimpleGoogleSitemapPlugin blog](http://onlinesid.com/blog/sfsimplegooglesitemapplugin) to leave comment, suggestion, etc.
+Visit [sfSimpleGoogleSitemapPlugin blog](http://bluehorn.co.nz/2010/06/07/sfsimplegooglesitemapplugin/) to leave comment, suggestion, etc.
 
 Contents
 --------
