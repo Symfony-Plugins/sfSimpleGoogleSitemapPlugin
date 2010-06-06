@@ -11,6 +11,7 @@ all:
         model:            sfSimpleBlogPost       # model class name
         module:           sfSimpleBlog           # name of module for the url to make up the url
         action:           show                   # name of action for the url to make up the url
+#        routing:          "@something"           # use routing for the URLs in the sitemap
         params:                                  # parameters for the url
           stripped_title: getStrippedTitle       # name : method to get the parameter value
         date:             getCreatedAt           # method to get date last updated for the url
@@ -24,6 +25,7 @@ all:
         model:            sfSimpleBlogTag        # model class name
         module:           sfSimpleBlog           # name of module for the url to make up the url
         action:           showByTag              # name of action for the url to make up the url
+#        routing:          "@something"           # use routing for the URLs in the sitemap
         params:                                  # parameters for the url
           tag: getTag                            # name : method to get the parameter value
         group_by: { column: tag, method: Tag }   # group by the specified column/method

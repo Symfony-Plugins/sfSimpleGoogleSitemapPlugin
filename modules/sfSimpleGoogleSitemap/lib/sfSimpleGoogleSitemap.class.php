@@ -100,6 +100,7 @@ class sfSimpleGoogleSitemap {
         $model = $a['model'];
         $module = $a['module'];
         $action = $a['action'];
+        $routing = (isset($a['routing'])?$a['routing']:null);
         $params_array = $a['params'];
         $date_field = (isset($a['date'])?$a['date']:null);
         $criteria_array = (isset($a['criteria'])?$a['criteria']:null);
@@ -133,7 +134,14 @@ class sfSimpleGoogleSitemap {
               $p[] = $name.'='.$obj->$method();
             }
 
-            $url = $module.'/'.$action.'?'.implode('&', $p);
+            if (!$routing)
+            {
+              $url = $module.'/'.$action.'?'.implode('&', $p);
+            }
+            else
+            {
+              $url = $routing.'?'.implode('&', $p);
+            }
 
             if ($date_field)
             {
