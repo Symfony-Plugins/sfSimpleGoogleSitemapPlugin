@@ -15,10 +15,10 @@
 		<active>yes</active>
 	</lead>
 	<date>2010-06-07</date>
-	<time>00:00:00</time>
+	<time>10:00:00</time>
 	<version>
-		<release>1.0.1</release>
-		<api>1.0.1</api>
+		<release>1.0.2</release>
+		<api>1.0.2</api>
 	</version>
 	<stability>
 		<release>stable</release>
@@ -76,8 +76,8 @@
 	<changelog>
     <release>
       <version>
-        <release>1.0.1</release>
-        <api>1.0.1</api>
+        <release>1.0.2</release>
+        <api>1.0.2</api>
       </version>
       <stability>
         <release>stable</release>
@@ -88,8 +88,7 @@
         LGPL
       </license>
       <notes>
- * Changed 'off' to 'false' in view.yml to make it work on 1.4
- * Get raw in template so it doesn't get escaped if the project's escape is set
+ * Added option to use routing URL instead of plain module/action
       </notes>
     </release>
 	</changelog>

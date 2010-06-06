@@ -21,9 +21,9 @@ Installation
 
 To install the plugin for a symfony project, the usual process is to use the symfony command line:
 
-For Symfony 1.1 and 1.2:
+For Symfony 1.1, 1.2, 1.3 and 1.4:
 
-    $ php symfony plugin:install -s "alpha" sfSimpleGoogleSitemapPlugin
+    $ php symfony plugin:install sfSimpleGoogleSitemapPlugin
 
 For Symfony 1.0:
 
@@ -31,7 +31,7 @@ For Symfony 1.0:
 
 Alternatively, if you don't have PEAR installed, you can download the latest package attached to this plugin's wiki page and extract it under your project's `plugins/` directory.
 
-For symfony 1.2, enable the plugin in the project's configuration.
+For symfony 1.2, 1.3 and 1.4 enable the plugin in the project's configuration.
 
     // in config/app/ProjectConfiguration.class.php
     class ProjectConfiguration extends sfProjectConfiguration
@@ -44,7 +44,7 @@ For symfony 1.2, enable the plugin in the project's configuration.
     
 Enable the module in your applications, via the `settings.yml` file.
 
-    // in myproject/apps/frontend/config/settings.yml
+    # in myproject/apps/frontend/config/settings.yml
     all:
       .settings:
         enabled_modules:        [default, sfSimpleGoogleSitemap]
@@ -63,7 +63,7 @@ in apps/yourapp/config/routing.yml
       url: /sitemap.xml
       param: { module: sfSimpleGoogleSitemap, action: index }
 
-and modify your web/.htaccess:
+and if you use sitemap.xml as the URL in the routing, you might need to modify your web/.htaccess:
     
     # we skip all files with .something
     # comment the following 3 lines to allow periods in routes
@@ -95,6 +95,7 @@ Note: the provided sample is for serving sitemap for sfSimpleBlogPlugin.
             model:            sfSimpleBlogPost       # model class name
             module:           sfSimpleBlog           # name of module for the url to make up the url
             action:           show                   # name of action for the url to make up the url
+            #routing:          "@routing"             # use a routing URL (if set)
             params:                                  # parameters for the url
               stripped_title: getStrippedTitle       # name : method to get the parameter value
             date:             getCreatedAt           # method to get date last updated for the url
@@ -108,6 +109,7 @@ Note: the provided sample is for serving sitemap for sfSimpleBlogPlugin.
             model:            sfSimpleBlogTag        # model class name
             module:           sfSimpleBlog           # name of module for the url to make up the url
             action:           showByTag              # name of action for the url to make up the url
+            #routing:          "@routing"             # use a routing URL (if set)
             params:                                  # parameters for the url
               tag:            getTag                 # name : method to get the parameter value
             group_by: { column: tag, method: Tag }   # group by the specified column/method
@@ -128,7 +130,7 @@ or, if you enabled sitemap.xml in routing:
 
     http://myproject/frontend_dev.php/sitemap.xml
 
-Visit [sfSimpleGoogleSitemapPlugin blog](http://onlinesid.com/blog/sfsimplegooglesitemapplugin) to leave comment, suggestion, etc.
+Visit [sfSimpleGoogleSitemapPlugin blog](http://bluehorn.co.nz/2010/06/07/sfsimplegooglesitemapplugin/) to leave comment, suggestion, etc.
 
 TODO
 ----
